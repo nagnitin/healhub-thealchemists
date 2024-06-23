@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heal Hub</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/easy.css">
+    <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href="Images/fave_icon.png" type="image/x-icon">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Start site wrapper -->
+    <div class="site-wrapper">
+        <div class="header-index">
+            <!-- ====== 1.1. Header section ====== -->
+            <header>
+                <nav class="container navbar">
+                    <div class="container-nav flex">
+                        <!-- site logo -->
+                        <a class="navbar-logo" href="/"><img src="Images/heallogo.png" alt="logo"></a>
+                        <button class="navbar-toggler" onclick="openNav()" type="button">
+                            <span class="fa-solid fa-bars"></span>
+                        </button>
+                        <!-- menus -->
+                        <ul class="navbar-nav flex">
+                            <li><a class="nav-link active" href="/">Home</a></li>
+                            <li><a class="nav-link" href="comingsoon.html">About</a></li>
+                            <li><a class="nav-link" href="comingsoon.html">Contact</a></li>
+							
+                            <li class="dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    More
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+									<li><a class="dropdown-item" href="https://app.droxy.ai/guest-chatbot/667841b67a571e5ac9b0852d">Try AI</a></li>
+									<li><a class="dropdown-item" href="https://meet.google.com/byr-wqtt-bzj">Consult Now</a></li>
+									<li><a class="dropdown-item" href="https://healhub-store-thealchemists.netlify.app/">Store</a></li>
+                                    
+                                 
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="flex nav-right">
+                        <p>Call Us: <span>+91 9876543210&nbsp;&nbsp;</span></p>
+                        <!-- header buttons -->
+                        <i onclick="open_search_bar()" class="fa-solid fa-magnifying-glass"></i>
+                        <i onclick="open_right_side()" class="fa-solid fa-bars"></i>
+                    </div>
+                </nav>
+                <!-- Sidebar -->
+                <aside id="mySidepanel" class="sidepanel">
+                    <div class="sidebar flex">
+                        <a href=""><img src="Images/heallogo.png" alt="logo"></a>
+                        <button class="closebtn btn_hover1" onclick="closeNav()"><i
+                                class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <div>
+                        <!-- side menus -->
+                        <ul>
+                            <li><a class="nav-link active" href="index.html">Home</a></li>
+                            <li><a class="nav-link" href="about.html">About</a></li>
+                            <li><a class="nav-link" href="contact.html">Contact</a></li>
+                            <li class="pages"><a href="#">More</a></li>
+                            <li class="collapse_btn">
+                                <a class="nav-link plus_collapse" data-bs-toggle="collapse" href="javascript:void(0);"
+                                    onclick="toggleCollapse('pages')" aria-expanded="false" aria-controls="pages">
+                                    <i class="fa-solid fa-plus"></i>
+                                </a>
+                                <div class="collapse" id="pages">
+                                    <ul>
+                                        <li><a class="nav-link" href="https://app.droxy.ai/guest-chatbot/667841b67a571e5ac9b0852d">Try AI</a></li>
+                                        <li><a class="nav-link" href="https://meet.google.com/byr-wqtt-bzj">Consult Now</a></li>
+                                        <li><a class="nav-link" href="https://healhub-store-thealchemists.netlify.app/">Store</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- searchbar -->
+                <div id="search-bar">
+                    <div class="btn_hover1" onclick="close_search_bar()"><i class="fa-solid fa-xmark"></i></div>
+                    <form method="search" action="#">
+                        <input type="search" required placeholder="Search...">
+                        <button type="submit" class="btn_hover1">Search</button>
+                    </form>
+                </div>
+
+                <!-- Right Sidebar -->
+                <section class="header-right-sidebar" id="right_side">
+                    <div class="flex flex-sb">
+                        <a href="/"><img src="Images/heallogo.png" alt="logo"></a>
+                        <button class="close_right_sidebar fa-solid fa-xmark" onclick="close_right_sade()"> </button>
+                    </div>
+                    <p>HealHub is a comprehensive healthcare platform that delivers cost-effective medications,consultancy with doctors,AI Assistance at a very affordable rate.
+                    </p>
+                    <a href="/about.html" class="btn_hover1">Discover More</a>
+                    <hr>
+                    <h4>Connected details:</h4>
+                    <ul class="flex">
+                        <li>
+                            <a href="#"> <i class="fa-solid fa-phone"></i></a>
+                            <a href="#" class="text-lowercase">healhub24x7@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fa-regular fa-envelope"></i></a>
+                            <a href="#">+91 9876543210</a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fa-sharp fa-regular fa-clock"></i></a>
+                            <a href="#">Available 24x7</a>
+                        </li>
+                    </ul>
+                    <span class="flex">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </span>
+                </section>
+            </header>
+            <!-- ====== End of 1.1. Header section ====== -->
+            <!-- ====== 1.2. hero section ====== -->
+            <section class="hero">
+                <div class="container" data-aos="zoom-in">
+                    <div>
+                        <div class="hero-social-icon flex">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <hr class="d-md-block d-sm-none d-none">
+                        </div>
+                        <div class="center-data">
+                            <h1>heal hub&nbsp;</h1>
+                            <h3>pharmacy at your doorstep&nbsp;</h3>
+                            <div class="center-btn flex">
+                                <a href="services.html" class="btn_hover1">Get Started</a>
+                                <a href="about.html" class="btn_hover2">Discover More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ====== End of 1.2. hero section ====== -->
+        </div>
+        <!-- ====== 1.3. card section ====== -->
+        <section class="feature">
+            <div class="container">
+                <div class="flex">
+                    <div class="header-card" data-aos="fade-up">
+                        <div>
+                            <figure><img src="Images/icon/date (1).png" class="feature-img1" alt="feature"></figure>
+                            <h4>UPTO 365 days/year&nbsp;</h4>
+                          <p> &nbsp;Never fall sick again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order https://meet.google.com/sxe-mkdy-wcg flexibly if that's your style.</p>
+                          <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="header-card" data-aos="fade-down">
+                        <div>
+                            <figure><img src="Images/icon/fast-delivery (1).png" alt="feature"></figure>
+                            <h4>delivery within 30 minutes&nbsp;</h4>
+                            <p>You're only thirty minutes away from your no side effect and super healable organic medicines delivered right to your home. We work with the best doctors and pharmacists in each town to ensure that you're 100% healthy.&nbsp;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="header-card" data-aos="fade-up">
+                        <div>
+                            <figure><img src="Images/icon/organic.png" alt="feature"></figure>
+                            <h4>100% organic&nbsp;&nbsp;</h4>
+                          <p> All our medicines are side-effect free, organic and herbal.Good for your health, the environment, and it also tastes better unlike other bitter medicines!&nbsp;</p>
+                            <p>&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="header-card" data-aos="fade-down">
+                        <div>
+                            <figure><img src="Images/icon/order.png" alt="feature"></figure>
+                            <h4>order anything&nbsp;</h4>
+                          <p> We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our pharmacies containing over 500+ medicines and medical essentials. It's up to you!&nbsp;</p>
+                            <p>&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ====== End of 1.3. card section ====== -->
+        <!-- ====== 1.4. logoipsum section ====== -->
+        <!--<section class="logoipsum">
+            <div class="container">
+                <div class="flex flex-col gap-2">
+                    <hr class="hr1">
+                    <h3 data-aos="zoom-in" class="mb-15">OUR CLIENTS</h3>
+                </div>
+                <div class="logoipsum-slider sliderlogo" data-aos="zoom-in">
+                    <figure><img src="Images/home/logoipsum1.svg" alt="Cipla"></figure>
+                    <figure><img src="Images/home/logoipsum2.svg" alt="logoipsum"></figure>
+                    <figure><img src="Images/home/logoipsum3.svg" alt="logoipsum"></figure>
+                    <figure><img src="Images/home/logoipsum4.svg" alt="logoipsum"></figure>
+                    <figure><img src="Images/home/logoipsum5.svg" alt="logoipsum"></figure>
+                    <figure><img src="Images/home/logoipsum6.svg" alt="logoipsum"></figure>
+                </div>
+                <hr class="hr2">
+            </div>
+        </section> -->
+        <!-- ====== End of 1.4. logoipsum section ====== -->
+        <!-- ====== 1.5. About us section ====== -->
+        <section class="about">
+            <div class="container">
+                <div class="about-data flex-sb">
+                    <div class="w-50" data-aos="fade-up">
+                        <div class="flex about-title">
+                            <hr>
+                            <h5>ABOUT US</h5>
+                        </div>
+                        <h2>Explore Our Services At a very Affordable Rate
+                        </h2>
+                        <p>&nbsp;At Heal Hub, we believe that good health should be accessible to everyone. That's why we're proud to offer a range of essential health services at incredibly affordable rates. Whether you're in need of medications, personalized diet plans, or expert guidance on managing your health, we've got you covered.
+                        </p>
+                        <div class="flex gap-1 mt-15">
+                            <i class="fa-solid fa-check"></i>
+                            <h5>Consult with our AI Chat-Bot 24 x 7.
+                            </h5>
+                        </div>
+                        <div class="flex gap-1 mt-15">
+                            <i class="fa-solid fa-check"></i>
+                            <h5>Consult with our doctors whenever in need.</h5>
+                        </div>
+                        <div class="flex gap-2 mt-30">
+                            <a href="services.html" class="btn_hover1">Get Started</a>
+                            <a href="about.html" class="btn_hover2">Discover More</a>
+                        </div>
+                    </div>
+                    <div class="about-imgs flex flex-center w-50" data-aos="fade-down">
+                        <div>
+                            <figure>
+                                <img src="Images/home/about.png" alt="img">
+                            </figure>
+                        </div>
+                        <div class="ab-count flex flex-center">
+                            <div class="flex flex-center">
+                                <h2>1</h2>
+                                <h2>k+</h2>
+                            </div>
+                            <p>CUSTOMRS&nbsp;</p>
+                        </div>
+                        <div class="about-hr flex gap-1">
+                            <hr>
+                            <h6>Who we are</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ====== End of 1.5. About us section ====== -->
+        <!-- ====== 1.6. gallary section ====== -->
+        <section class="portfolio">
+            <div class="portfolio-1">
+                <div class="container">
+                    <div class="portfo-center" data-aos="fade-up">
+                        <div class="w-50">
+                            <div class="flex gap-1">
+                                <hr class="gallary-hr1">
+                                <h5>PHOTO GALLERY</h5>
+                            </div>
+                            <h2 class="mt-15">Our Latest Photos.</h2>
+                            <p>Here's some glimpses from our latest photos&nbsp;&nbsp;
+                            </p>
+                        </div>
+                        <div class="flex flex-end w-100">
+                            <a href="portfolio.html" class="btn_hover2">View All Projects</a>
+                        </div>
+                        <hr class="mt-30">
+                    </div>
+                </div>
+            </div>
+            <div class="gallary">
+                <div class="ga-bg"> </div>
+                <!-- overly -->
+                <span> </span>
+                <div class="container" data-aos="fade-up">
+                    <!-- Tab links -->
+                    <div class="tab mb-15">
+                        <button class="tablinks active" onclick="open_img(event, 'all')">ALL</button>
+                        <button class="tablinks" onclick="open_img(event, 'design')">DESIGN</button>
+                        <button class="tablinks" onclick="open_img(event, 'development')">DEVELOPMENT</button>
+                        <button class="tablinks" onclick="open_img(event, 'branding')">BRANDING</button>
+                        <button class="tablinks" onclick="open_img(event, 'markiting')">MARKETING</button>
+                        <button class="tablinks" onclick="open_img(event, 'seo')">SEO</button>
+                    </div>
+                    <!-- Tab content -->
+                    <div id="all" class="tabcontent" style="display: block;">
+                        <div class="flex flex-center">
+                            <div class="flex w-100">
+                                <div class="w-33">
+                                    <figure><img src="Images/Main Website/design.jfif" alt="img"></figure>
+                                </div>
+                                <div class="w-33">
+                                    <figure><img src="Images/Main Website/devlopment 2.png" alt="img"></figure>
+                                </div>
+                                <div class="w-33">
+                                    <figure><img src="Images/Main Website/hospital-animation-ezgif.com-video-to-gif-converter.gif" alt="img"></figure>
+                                </div>
+                                <div class="w-66">
+                                    <figure><img src="Images/Main Website/marketing 6.gif" alt="img"></figure>
+                                </div>
+                                <div class="w-33">
+                                    <figure><img src="Images/Main Website/seo 5.png" alt="img"></figure>
+                                </div>
+                                <div class="w-33">
+                                    <figure><img src="Images/Main Website/design 2.jpg" alt="sm_img"></figure>
+                                    <figure><img src="Images/Main Website/branding 5.png" alt="sm_img"></figure>
+                                </div>
+                                <div class="w-66">
+                                    <figure><img src="Images/Main Website/devlopment 3.gif" alt="img"></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="design" class="tabcontent">
+                        <div class="flex flex-center">
+                            <div class="flex w-100">
+                                <div class="w-33">
+                                    <figure><img src="Images/Main Website/design.jfif" alt="img"></figure>
+                                </div>
+                                <div class="w-33">
+                                    <figure><img src="Images/Main Website/design 2.jpg" alt="img"></figure>
+                                </div>
+                                <div class="w-33">
+                                    <figure><img src="Images/Main Website/design 3.png" alt="img"></figure>
+                                </div>
+                                <div class="w-33">
+                                    <figure><img src="Images/Main Website/design 4.webp" alt="img"></figure>
+                                </div>
+                                <div class="w-33">
+                                    <figure><img src="Images/Main Website/design 5.jfif" alt="img"></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="development" class="tabcontent">
+                        <div class="flex flex-center">
+                            <div class="flex w-100">
+                                <div class="w-33">
+                                    <figure><img src="Images/Main Website/devlopment.webp" alt="img"></figure>
+                                </div>
+                                <div class="w-33">
+                                    <figure><img src="Images/Main Website/devlopment 2.png" alt="img"></figure>
+                                </div>
+                                <div class="w-33">
+                                    <figure><img src="Images/Main Website/devlopment 3.gif" alt="img"></figure>
+                                </div>
+                                <div class="w-33">
+                                    <figure><img src="Images/Main Website/devlopment 4.jfif" alt="img"></figure>
+                                </div>
+                                <div class="w-33">
+                                    <figure><img src="Images/Main Website/devlopment 5.jpg" alt="img"></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="branding" class="tabcontent">
+                        <div class="flex flex-center">
+                            <div class="flex w-100">
+                                <div class="w-33">
+                                    <figure><img src="Images/Main Website/hospital-animation-ezgif.com-video-to-gif-converter.gif" alt="img"></figure>
+                                </div>
+                                <div class="w-66">
+                                    <figure><img src="Images/Main Website/branding 2.png" alt="img"></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="markiting" class="tabcontent">
+                        <div class="flex flex-center">
+                            <div class="flex w-100">
+                                <div class="w-33">
+                                    <figure><img src="Images/Main Website/marketing 3.jfif" alt="img"></figure>
+                                </div>
+                                <div class="w-66">
+                                    <figure><img src="Images/Main Website/marketing 6.gif" alt="img"></figure>
+                                </div>
+                                <div class="w-66">
+                                    <figure><img src="Images/Main Website/marketing 2.png" alt="img"></figure>
+                                </div>
+                                <div class="w-33">
+                                    <figure><img src="Images/Main Website/marketing 4.png" alt="img"></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="seo" class="tabcontent">
+                        <div class="flex flex-center">
+                            <div class="flex w-100">
+                                <div class="w-33">
+                                    <figure><img src="Images/Main Website/seo.png" alt="img"></figure>
+                                </div>
+                                <div class="w-33">
+                                    <figure><img src="Images/Main Website/seo 2.jfif" alt="img"></figure>
+                                </div>
+                                <div class="w-33">
+                                    <figure><img src="Images/Main Website/seo 3.jfif" alt="img"></figure>
+                                </div>
+                                <div class="w-66">
+                                    <figure><img src="Images/Main Website/seo 4.png" alt="img"></figure>
+                                </div>
+                                <div class="w-33">
+                                    <figure><img src="Images/Main Website/seo 5.png" alt="img"></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallary-hr flex gap-1 flex-end mt-15">
+                        <h6>Creative Solution</h6>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ====== End of 1.6. gallary section ====== -->
+        <!-- ====== 1.7. Services section ====== -->
+        <section class="service">
+            <div class="service-1">
+                <div class="container">
+                    <div class="service-data" data-aos="fade-down">
+                        <div class="w-66">
+                            <div class="flex gap-1">
+                                <hr class="service-hr1">
+                                <h5>SERVICES</h5>
+                            </div>
+                            <h2 class="mt-15">Primary Services We Offer</h2>
+                            <p class="mt-15">The following are the services we provide :
+                            </p>
+                        </div>
+                        <div class="w-33 mt-15 flex flex-end">
+                            <a href="services.html" class="btn_hover2">View All Services</a>
+                        </div>
+                        <hr class="mt-15 mb-15">
+                    </div>
+                    <div class="flex gap-1 mt-15 s-card">
+                        <div class="service-card" data-aos="fade-down">
+                            <!--<figure><img src="Images/icon/man_10428594.png" alt=""></figure>-->
+                            <h3>Online Medicine Delivery&nbsp;</h3>
+                            <p>Get your prescribed medications conveniently delivered to your doorstep. Heal Hub ensures timely delivery of your medicines, saving you the hassle of visiting a pharmacy..
+                            </p>
+                            <a href="services.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="service-card" data-aos="fade-up">
+                            <!--<figure><img src="Images/icon/slider2.png" alt="slider2"></figure>-->
+                            <h3>Personalized Diet Plans&nbsp;</h3>
+                            <p>Our expert nutritionists craft customized diet plans tailored to your specific health goals and dietary requirements. Whether you aim to lose weight, manage a medical condition, or simply adopt a healthier lifestyle, our personalized diet plans will help you achieve your objectives.&nbsp;
+                            </p>
+                            <a href="services.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="service-card" data-aos="fade-down">
+                            <!--<figure><img src="Images/icon/slider3.png" alt="slider3"></figure>-->
+                            <h3>Virtual Consultations</h3>
+                            <p>Consult with experienced healthcare professionals from the comfort of your home through platforms like zoom meet. Receive expert medical advice, diagnosis, and treatment recommendations without the need for in-person visits.
+                            </p>
+                            <a href="services.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ====== End of 1.7. Services section ====== -->
+        <!-- ====== 1.8. Experience section ====== -->
+        <section class="experience">
+            <div class="container">
+                <div class="flex-wrap exp-center" data-aos="fade-up">
+                    <div class="w-66">
+                        <div class="flex gap-1">
+                            <hr class="experience-hr1 m-0">
+                            <h5>Experience in percentage</h5>
+                        </div>
+                        <h2>Advance Tech</h2>
+                        <p class="mt-1">
+                        </p>
+                    </div>
+                    <div class="w-33 mt-30 flex flex-end">
+                        <a href="services.html" class="btn_hover1">Get Started</a>
+                    </div>
+                    <hr>
+                </div>
+                <div class="flex flex-sb">
+                    <div class="w-50 p-relative flex flex-center" data-aos="zoom-in">
+                        <div class="experience_mask">
+                            <figure><img src="Images/home/experience.png" alt="img"></figure>
+                        </div>
+                        <div class="experience-hr flex gap-1">
+                            <hr>
+                            <h6> Our Expertise </h6>
+                        </div>
+                    </div>
+                    <div class="w-50 flex flex-col gap-2 mt-1">
+                        <div class="flex gap-1 ex-card" data-aos="fade-up">
+                            <div class="flex flex-center">
+                                <h3>96</h3>
+                                <h3>%</h3>
+                            </div>
+                            <div>
+                                <h4>AI Accuracy (approx)</h4>
+                                <p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-1 ex-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="flex flex-center">
+                                <h3>99</h3>
+                                <h3>%</h3>
+                            </div>
+                            <div>
+                                <h4>Delivery within 30 minutes </h4>
+                                <p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-1 ex-card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="flex flex-center">
+                                <h3>40</h3>
+                                <h3>%</h3>
+                            </div>
+                            <div>
+                                <h4>Cheaper with respect to others</h4>
+                                <p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ====== End of 1.8. Experience section ====== -->
+        <!-- ====== 1.9. How we work section ====== -->
+        <section class="work">
+            <div class="container position-relative">
+                <div class="work-para text-center" data-aos="fade-up">
+                    <h5>HOW WE WORK</h5>
+                    <h2 class="h2_margin">Our Process For Delivering Healthiness</h2>
+                    <p>Heal Hub undergoes 4 steps in delivering healthiness.
+                    </p>
+                </div>
+                <div class="work-hr flex gap-1">
+                    <hr>
+                    <h6>Project in steps</h6>
+                </div>
+                <div class="work-line flex flex-center gap-1 flex-wrap p-relative">
+                    <div data-aos="zoom-in">
+                        <h2>01.</h2>
+                        <h4>Make An Appointment</h4>
+                    </div>
+                    <div data-aos="zoom-in">
+                        <h2>02.</h2>
+                        <h4>Meet Our Doctors</h4>
+                    </div>
+                    <div data-aos="zoom-in">
+                        <h2>03.</h2>
+                        <h4>Get Consultation</h4>
+                    </div>
+                    <div data-aos="zoom-in">
+                        <h2>04.</h2>
+                        <h4>Get your medicines</h4>
+                    </div>
+                </div>
+                <div class="flex flex-center" data-aos="zoom-in">
+                    <a href="contact.html" class="btn_hover2">Contact Now</a>
+                </div>
+            </div>
+        </section>
+        <!-- ====== End of 1.9. How we work section ====== -->
+        <!-- ====== 1.10. team section ====== -->
+        <section class="team">
+            <div class="container">
+                <div class="flex team-center" data-aos="fade-up">
+                    <div class="w-66">
+                        <div class="flex gap-1">
+                            <hr class="team-hr1">
+                            <h5>Review Section</h5>
+                        </div>
+                        <h2 class="mt-1">Hear from our customers
+                        </h2>
+                        <p class="mt-1">
+                        </p>
+                    </div>
+                    <div class="w-33 mt-15 flex flex-end">
+                        <a href="team.html" class="btn_hover2">all customers</a>
+                    </div>
+                </div>
+                <div class="team-slider flex mt-15" data-aos="zoom-in">
+                    <div class="team-img">
+                        <img src="Images/slider/team-slider1.png" alt="Avatar">
+                        <div class="overlay">
+                            <div class="overlay_text">
+                                <h3>Jane Doe</h3>
+                                <h4>Teacher</h4>
+                                <div class="flex flex-center gap-1">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-img">
+                        <img src="Images/slider/team-slider2.png" alt="Avatar">
+                        <div class="overlay">
+                            <div class="overlay_text">
+                                <h3>Katti Pairi</h3>
+                                <h4>SDE @Adobe</h4>
+                                <div class="flex flex-center gap-1">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-img">
+                        <img src="Images/slider/team-slider3.png" alt="Avatar">
+                        <div class="overlay">
+                            <div class="overlay_text">
+                                <h3>Jonty Coll</h3>
+                                <h4>VLSI Designer</h4>
+                                <div class="flex flex-center gap-1">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-img">
+                        <img src="Images/slider/team-slider4.png" alt="Avatar">
+                        <div class="overlay">
+                            <div class="overlay_text">
+                                <h3>Anni Doe</h3>
+                                <h4>Ui / Ux Developer</h4>
+                                <div class="flex flex-center gap-1">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-img">
+                        <img src="Images/slider/team-slider1.png" alt="Avatar">
+                        <div class="overlay">
+                            <div class="overlay_text">
+                                <h3>Jane Doe</h3>
+                                <h4>Designer</h4>
+                                <div class="flex flex-center gap-1">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-img">
+                        <img src="Images/slider/team-slider2.png" alt="Avatar">
+                        <div class="overlay">
+                            <div class="overlay_text">
+                                <h3>Katti Pairi</h3>
+                                <h4>Seo expert</h4>
+                                <div class="flex flex-center gap-1">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-img">
+                        <img src="Images/slider/team-slider3.png" alt="Avatar">
+                        <div class="overlay">
+                            <div class="overlay_text">
+                                <h3>Jonny Coll</h3>
+                                <h4>Developer</h4>
+                                <div class="flex flex-center gap-1">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-img">
+                        <img src="Images/slider/team-slider4.png" alt="Avatar">
+                        <div class="overlay">
+                            <div class="overlay_text">
+                                <h3>Anni Doe</h3>
+                                <h4>Ui / Ux</h4>
+                                <div class="flex flex-center gap-1">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-img">
+                        <img src="Images/slider/team-slider1.png" alt="Avatar">
+                        <div class="overlay">
+                            <div class="overlay_text">
+                                <h3>Jane Doe</h3>
+                                <h4>Designer</h4>
+                                <div class="flex flex-center gap-1">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-img">
+                        <img src="Images/slider/team-slider2.png" alt="Avatar">
+                        <div class="overlay">
+                            <div class="overlay_text">
+                                <h3>Katti Pairi</h3>
+                                <h4>Seo expert</h4>
+                                <div class="flex flex-center gap-1">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-img">
+                        <img src="Images/slider/team-slider3.png" alt="Avatar">
+                        <div class="overlay">
+                            <div class="overlay_text">
+                                <h3>Jonny Coll</h3>
+                                <h4>Developer</h4>
+                                <div class="flex flex-center gap-1">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-img">
+                        <img src="Images/slider/team-slider4.png" alt="Avatar">
+                        <div class="overlay">
+                            <div class="overlay_text">
+                                <h3>Anni Doe</h3>
+                                <h4>Ui / Ux</h4>
+                                <div class="flex flex-center gap-1">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-btn" data-aos="zoom-in">
+                <div class="container flex flex-sb gap-2 flex-wrap">
+                    <h4>Ask A Question To Our Amazing Team, And Get, Response Quickly.
+                    </h4>
+                    <a href="contact.html" class="btn_hover2">Contact Now</a>
+                </div>
+            </div>
+        </section>
+        <!-- ====== End of 1.10. team section ====== -->
+        <!-- ====== 1.11. Pricing section ====== -->
+        <section class="pricing p-relative">
+            <span> </span>
+            <div class="pricing-hr flex gap-1">
+                <hr>
+                <h6>Pricing Plans</h6>
+            </div>
+            <div class="container">
+                <div class="text-center" data-aos="fade-down">
+                    <h5>PRICING</h5>
+                    <h2 class="mt-1">Pricing Plans</h2>
+                    <p class="mt-1 mb-15">Start Being Healthy From Today
+                    </p>
+                </div>
+                <div class="pricing-card flex gap-1 mt-3 text-center">
+                    <div class="flex flex-col gap-2" data-aos="fade-up">
+                        <h3>BASIC</h3>
+                        <h2>Rs.999<sub>/kit</sub></h2>
+                        <h6>1 Medicine Kit in month</h6>
+                        <h6>Order 24/7</h6>
+                        <h6>Free Delivery</h6>
+                        <a href="pricing.html" class="btn_hover1">Get Started</a>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h3>PREMIUM</h3>
+                        <h2>Rs.8499<br>/month</h2>
+                        <h6>Master Health Check-up</h6>
+                        <h6>Order 24/7</h6>
+                        <h6>Access to newest services</h6>
+                        <h6>Free Delivery</h6>
+                        <h6>60% off upto Rs.300</h6>
+                        <h6>After master health check-up if you are diagnosed with any disease Heal-Hub will provide 1 month of medication for free</h6>
+                        <a href="pricing.html" class="btn_hover2">Get Started</a>
+                    </div>
+                    <div class="flex flex-col gap-2" data-aos="fade-down">
+                        <h3>STANDARD</h3>
+                        <h2>Rs.3499<br>/month</h2>
+                        <h6>Single-disease health check-up</h6>
+                        <h6>Order 24/7</h6>
+                        <h6>Access to newest services</h6>
+                        <h6>Free delivery</h6>
+                        <h6>20% off upto Rs.200</h6>
+                        <h6>Medicines will be provided upon the disease checkup opted</h6>
+
+                        <a href="pricing.html" class="btn_hover1">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ====== End of 1.11. Pricing section ====== -->
+        <!-- ====== 1.12. FAQ section ====== -->
+ <section class="faq p-relative">
+            <span> </span>
+            <div class="container">
+                <div class="flex flex-wrap">
+                    <div class="w-50 text-center" data-aos="fade-up">
+                        <div class="flex gap-2 ">
+                            <hr class="faq-hr1">
+                            <h5>FAQ</h5>
+                        </div>
+                        <h2 class="mt-1">Frequently Asked Questions</h2>
+                        <p class="mt-1">
+                        </p>
+                    </div>
+                    <div class="w-50 mt-15">
+                        <div class="accordion flex flex-col gap-2" id="accordionExample" data-aos="fade-down">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb" type="button">
+                                        WHAT KIND OF SERVICES DO WE
+                                        PROVIDE?
+                                        <img src="Images/icon/plus.png" alt="img">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>Heal Hub offers a comprehensive range of health services aimed at providing convenient access to essential medical care and supplies. Our primary focus is on delivering medicines promptly to your doorstep, ensuring you have the medications you need when you need them. In addition to medication delivery, we provide prescription refills, medication management services, and personalized consultations with licensed healthcare professionals. We also offer health information and resources to empower individuals to make informed decisions about their well-being. At Heal Hub, your health is our priority, and we strive to offer convenient, reliable, and compassionate care.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb" type="button">
+                                        ARE THE MEDICATIONS SOLD SOLD ON HEAL HUB SAFE AND GENUINE?
+                                        <img src="Images/icon/plus.png" alt="img">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>Absolutely. Heal Hub ensures the quality and authenticity of its products through stringent quality assurance measures.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb" type="button">
+                                        WHAT PAYMENT OPTIONS ARE AVAIABLE ON HEAL HUB?
+                                        <img src="Images/icon/plus.png" alt="img">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>Heal Hub accepts various payment methods, including credit/debit cards, cash on delivery, net banking, and digital wallets, providing users with flexibility and convenience.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb" type="button">
+                                       HOW LONG DOES IT TAKE FOR MEDICINES TO BE DELIVERED BY HEAL HUB?
+                                        <img src="Images/icon/plus.png" alt="img">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>Delivery times may vary depending on your location and product availability. However, Heal Hub strives to deliver orders promptly.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ====== End of 1.12. FAQ section ====== -->
+        <!-- ====== 1.13. Blogs section ====== -->
+        <section class="blog">
+            <div class="container">
+                <div class="flex blog-center" data-aos="fade-down">
+                    <div class="w-66">
+                        <div class="flex gap-1">
+                            <hr class="blog-hr1">
+                            <h5>BLOGS</h5>
+                        </div>
+                        <h2 class="mt-1">Latest Posts</h2>
+                       
+                    </div>
+                    <div class="w-33 mt-1 flex flex-end">
+                        <a href="blog.html" class="btn_hover2">See all blogs</a>
+                    </div>
+                </div>
+                <div class="flex gap-2 mt-15 blog-cards">
+                    <div data-aos="fade-up" class="blog-card w-100">
+                        <img src="Images/blog 1.jpg" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h4>Accelerating antibiotic development,access partnership
+                            </h4>
+                            <a href="https://gardp.org/?gad_source=1&gclid=Cj0KCQjw6PGxBhCVARIsAIumnWYxNKV2HaR4n1pCaA2M0kSI2nH_unTVryVXk8DmLjcAaCC_QzWRT3QaAmmJEALw_wcB">Learn More</a>
+                        </div>
+                    </div>
+                    <div data-aos="fade-down" class="blog-card w-100">
+                        <img src="Images/BLOG 2.jpg" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h4>HARVARD HEALTH BLOG
+                            </h4>
+                            <a href="https://www.health.harvard.edu/blog">Learn More</a>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" class="blog-card w-100">
+                        <img src="Images/blog 3.jpg" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h4>Sleep onset mechanics: Understanding the transition from wakefullness to slumber
+                            </h4>
+                            <a href="https://www.news-medical.net/">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ====== End of 1.14. Blogs section ====== -->
+        <!-- ====== 1.15. Footer section ====== -->
+        <footer>
+            <div class="container">
+                <div class="footer-hr flex flex-col">
+                    <div class="flex gap-1" data-aos="fade-left">
+                        <hr>
+                        <h6>Newsletter</h6>
+                    </div>
+                    <h3>JOIN OUR MAILING LIST</h3>
+                    
+                </div>
+                <form id="footer-form" class="flex flex-sb gap-2" data-aos="zoom-in" data-aos-delay="400">
+                    <div id="footer-message"></div>
+                    <input type="email" required placeholder="Enter your mail">
+                    <button type="submit" class="btn_hover1">Get Started</button>
+                </form>
+            </div>
+            <div class="footer-menu">
+                <div class="container">
+                    <div class="flex flex-start footer-center">
+                        <div class="w-33 flex flex-col gap-2 flex-start">
+                            <!-- <a href="index.html"><img src="Images/logo.png" alt="footer-logo"></a> -->
+                            
+                            <span class="flex gap-2">
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            </span>
+                        </div>
+                        <div class="w-16 mt-1">
+                            <h4>Quick Links</h4>
+                            <ul class="flex flex-col gap-2 flex-start">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="#">Blogs</a></li>
+                            </ul>
+                        </div>
+                        <div class="w-16 mt-45 flex-end">
+                            <ul class="flex flex-col gap-2 flex-start">
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Privacy policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="w-33 mt-1 flex flex-col flex-start">
+                            <h4>Get Connected</h4>
+                            <ul class="flex flex-col gap-2 flex-start">
+                                <li>
+                                    <a href="#"> <i class="fa-solid fa-phone"></i></a>
+                                    <a href="#" class="text-lowercase">healhub24x7@gmail.com</a>
+                                </li>
+                                <li>
+                                    <a href="#"> <i class="fa-regular fa-envelope"></i></a>
+                                    <a href="#">+91 9876543210</a>
+                                </li>
+                                <li>
+                                    <a href="#"> <i class="fa-sharp fa-regular fa-clock"></i></a>
+                                    <a href="#">Available 24 x 7 </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container flex flex-sb gap-2 flex-wrap">
+                    <h6>Copyright © 2024 HealHub By <a href="https://codingwebstudio.com/" class="p-0">
+                            The Alchemists. </a> All Rights Reserved.
+                    </h6>
+                    <h6>Project for <b> Alliance Medical Innovation Challenge </b></h6>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- end site wrapper -->
+
+
+    <!-- button back to top -->
+    <button onclick="scrollToTop()" id="backToTopBtn" class="btn_hover2"><i
+            class="fa-solid fa-arrow-turn-up"></i></button>
+
+  
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 150,
+            duration: 1250,
+            once: true,
+        });
+    </script>
+
+    <!-- jquery js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jquery min js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- slick carousel min js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        integrity="sha256-DHF4zGyjT7GOMPBwpeehwoey18z8uiz98G4PRu2lV0A=" crossorigin="anonymous"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
